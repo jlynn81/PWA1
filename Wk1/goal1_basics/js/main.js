@@ -52,13 +52,15 @@
 console.log('------ variables ----------');
 
     //example 1: variables defined properly
-    var name = "james";
-    var course = "PWA1";
-    var month = 3;
-    console.log("name:", name + " / course: ", course + "/month:" + month)
+    //use comma's to separate variables
+//    var name = "james";
+//    var course = "PWA1";
+//    var month = 3;
+//    console.log ("name:", name + " / course: ", course + "/ month:" ,
 
     //example 2: variables not defined will = "undefined"
-
+    var name, course, month;
+    console.log ("name:", name + " / course: ", course + "/ month:" ,
 
     //example 3: a mix of variables defined and not defined
 
