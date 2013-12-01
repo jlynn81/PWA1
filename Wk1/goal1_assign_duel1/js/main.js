@@ -21,10 +21,10 @@ Assignment: Goal1: Assignment: Duel 1
 
     var round = 0;
 
-    function fight(){
-        //code will go here
+    function fight(){   //fight functionality for the two player battle
         //console.log('in fight function');
 
+        //opening dialogue screen information
         alert(player1 + ":" + player1Health + "*START*" + player2 + ":" + player2Health);
 
         for(var i=0; i<10; i++){    //if i is less than 10, run the loop
@@ -34,6 +34,7 @@ Assignment: Goal1: Assignment: Duel 1
             var minDam1 = player1Damage * .5;
             var minDam2 = player2Damage * .5;
 
+            //to randomize the attack damage for each player
             var f1 = Math.floor(Math.random()*(player1Damage - minDam1) + minDam1);
             var f2 = Math.floor(Math.random()*(player2Damage - minDam2) + minDam2);
 
@@ -46,12 +47,12 @@ Assignment: Goal1: Assignment: Duel 1
 
             //console.log(player1Health);
             //console.log(player2Health);
-            console.log(player1 + ":" + player1Health + " " + player2 + ":" + player2Health);
+            //console.log(player1 + ":" + player1Health + " " + player2 + ":" + player2Health);
 
 
             var results = winnerCheck();
 
-            console.log(results);
+            //console.log(results);
 
             if(results === "No Winner"){
                 round++;
@@ -85,7 +86,7 @@ Assignment: Goal1: Assignment: Duel 1
     };
 
     //this is where the fight will execute
-    console.log('program starts');
+    //console.log('program starts');
     fight();
 
 })();
