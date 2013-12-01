@@ -56,24 +56,30 @@ console.log('------ variables ----------');
 //    var name = "james";
 //    var course = "PWA1";
 //    var month = 3;
-//    console.log ("name:", name + " / course: ", course + "/ month:" ,
+//    console.log ("name: ", name + " / course: ", course + "/ month: ", month);
 
     //example 2: variables not defined will = "undefined"
-    var name, course, month;
-    console.log ("name:", name + " / course: ", course + "/ month:" ,
+    //var name, course, month;
+    //console.log ("name: ", name + " / course: ", course + "/ month: ", month);
 
     //example 3: a mix of variables defined and not defined
-
+//    var name, course = "PWA1", month;
+//    console.log ("name: ", name + " / course: ", course + "/ month: ", month);
 
     //example 4: declaring multiple variables at once w/ same value
-
+//    var a = b = c = d = 10;
+//    console.log("a: ", a + "/b:", b + "/c:", c + "/d:", d);
 
 
 // string (definition, concatenation, escape character)
 console.log('------ strings ----------');
 
     //basic string
+    var name = "James Bond";
+    console.log(name);
 
+    var testString = "He's in PWA1";
+    console.log("Example 1: ", testString);
 
     //string w/ escape characters " \ "
 
@@ -455,7 +461,7 @@ console.log('------Functions ----------');
      2.  pass a parameter called 'newct' into the function
      3   add the myctr to the parameter being passed into the function
      4.  first time: pass a 5 into the function as an argument
-     5.  second time: pass a 2 into the funciton as an argument
+     5.  second time: pass a 2 into the function as an argument
      6.  console.log the results
  ********************************************/
 
