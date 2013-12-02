@@ -1,23 +1,15 @@
 /*
 Name: Jennifer L Brown
 Date: 1 December 2013
-Assignment: Goal1: Assignment: Duel 1
+Assignment: Goal2: Assignment: Duel 1
  */
 
 //self-executing function
 (function(){
 
-    //Player Names
-    var player1 = "Tinkerbell";
-    var player2 = "Rose";
-
-    //Player Damage
-    var player1Damage = 25;
-    var player2Damage = 25;
-
-    //Player Remaining Health
-    var player1Health = 100;
-    var player2Health = 100;
+    //Player Names, Damage, Remaining Health within an Array
+    var player1 = ["Tinkerbell", 25, 100];
+    var player2 = ["Rose", 25, 100];
 
     var round = 0;
 
@@ -25,38 +17,38 @@ Assignment: Goal1: Assignment: Duel 1
         //console.log('in fight function');
 
         //opening dialogue screen information
-        alert(player1 + ":" + player1Health + "*START*" + player2 + ":" + player2Health);
+        alert(player1[0] + ":" + player1[2] + "*START*" + player2[0] + ":" + player2[2]);
 
         for(var i=0; i<10; i++){    //if i is less than 10, run the loop
 
             //random formula is: Math.floor(Math.random() * (max-min) + min);
 
-            var minDam1 = player1Damage * .5;
-            var minDam2 = player2Damage * .5;
+            var minDam1 = player1[1] * .5;
+            var minDam2 = player2[1] * .5;
 
             //to randomize the attack damage for each player
-            var f1 = Math.floor(Math.random()*(player1Damage - minDam1) + minDam1);
-            var f2 = Math.floor(Math.random()*(player2Damage - minDam2) + minDam2);
+            var f1 = Math.floor(Math.random()*(player1[1] - minDam1) + minDam1);
+            var f2 = Math.floor(Math.random()*(player2[1] - minDam2) + minDam2);
 
-            //console.log(f1);
-            //console.log(f2);
+            console.log(f1);
+            console.log(f2);
 
             //inflict damage
-            player1Health-=f1;
-            player2Health-=f2;
+            player1[2]-=f1;
+            player2[2]-=f2;
 
-            //console.log(player1Health);
-            //console.log(player2Health);
-            //console.log(player1 + ":" + player1Health + " " + player2 + ":" + player2Health);
+            console.log(player1[2]);
+            console.log(player2[2]);
+            console.log(player1[0] + ":" + player1[2] + " " + player2[0] + ":" + player2[2]);
 
 
             var results = winnerCheck();
 
-            //console.log(results);
+            console.log(results);
 
             if(results === "No Winner"){
                 round++;
-                alert(player1 + ":" + player1Health + "*Round*" + round + "*OVER*" + player2 + ":" + player2Health);
+                alert(player1[0] + ":" + player1[2] + "*Round*" + round + "*OVER*" + player2[0] + ":" + player2[2]);
 
             }else{
                 alert(results);
@@ -72,14 +64,14 @@ Assignment: Goal1: Assignment: Duel 1
 
         var result = "No Winner";
 
-        if(player1Health<1 && player2Health<1){
+        if(player1[2]<1 && player2[2]<1){
             result = "Both Pass On"
 
-        }else if(player1Health<1){
-            result = player2 + "WINS!!!"
+        }else if(player1[2]<1){
+            result = player2[0] + "WINS!!!"
 
-        }else if(player2Health<1){
-            result = player1 + "WINS!!!!"
+        }else if(player2[2]<1){
+            result = player1[0] + "WINS!!!!"
 
         };
         return result;
