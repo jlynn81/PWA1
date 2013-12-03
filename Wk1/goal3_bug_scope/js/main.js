@@ -88,7 +88,7 @@ console.log('------ Debugging ----------');
 
 
     //Example2:
-	//string w/ escape charaters and mixed single/double quotes
+	//string w/ escape characters and mixed single/double quotes
 	var phrase = 'he\'s in ' + ' "PWA1 " ';
 	console.log("phase 4: ", phrase);
 
