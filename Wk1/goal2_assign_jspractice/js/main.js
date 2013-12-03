@@ -87,18 +87,18 @@ console.log('--- 6. Create a function named findNum ---')
     var findNum = function(odd, boo){
 
         if(boo === 2){
-            return("$var" & 1);
+            Result = ("$odd" & 1);
         }else{
-            return(!("$var" & 1));
+            Result = (!("$even" & 1));
         };
 
-        return findNum();
+        return Result;
 
     };
 
-    var foundNum = findNum(value1, "odd", value2, "even");
+    var foundNum = findNum(value1, value2);
 
-    console.log("Answer: ", foundNum.length);
+    console.log("Answer: ", foundNum);
 
     findNum();
 
