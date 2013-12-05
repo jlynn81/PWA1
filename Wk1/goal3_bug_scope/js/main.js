@@ -145,25 +145,26 @@ console.log('------ Debugging ----------');
 	var moodType = mood(value1, value2);
 	console.log('mood: ', moodType);
 
-    /*
+
     //Example5:
 
     var myNums = [1, 2, 3, 4, 5];
     console.log(myNums);
 
-    for (var i=10, j=myNums.length; i < j; i++){
+    for (var i = 0, j = myNums.length; i < j; i++){
 
         console.log("i: " + i);
         console.log("j: " + j);
 
         if (i === 3) {
             console.log("testing out the break and it broke");
+            continue; //added this w/in the code vs outside of the code
         };
 
-        continue;
+        //continue;
         console.log('What is at index ' + i + ' = ', myNums[i] );
     };
-
+    /*
 *****************/
 
 /*
@@ -190,6 +191,24 @@ console.log('------ Debugging ----------');
 */
     console.log('------ Try Catch ----------');
 
+    var return10 = function(){
+        return 1;
+    };
+
+    var num = return10();
+
+    try //used for run time issues
+    {   //where we have conditionals to be tested
+        if(num === "") throw "empty";
+        if(isNaN(num)) throw "not a number";
+        if(num > 10) throw "too high";
+        if(num < 10) throw "too low";
+    }
+
+    catch(err)//displays the error
+    {
+        console.log(err);
+    };
 
 /*
 	===================================================================
@@ -256,9 +275,20 @@ console.log('------ Debugging ----------');
 */
 console.log("---------- Scope & Context ----------------");
 
+    var myctr = 0;              //update the global variable to 5
 
+    var myCounter1 = function(newct){
+        myctr = newct + 10;
 
+        console.log('function:', myctr);
+        //inside the function output will be 15
 
+    };
+
+    myCounter1(5);
+    console.log('function: ', myctr); //returns the value 15 since the myCounter (5) is passed
+                                      //through the var myctr into the function for newct
+                                      //with the console.log outside of the function it returns 0
 
 /*
 	===================================================================
