@@ -11,13 +11,19 @@ Assignment: Goal4: Assignment: The Duel - Part III
     var player1 = {name: 'Hulk', damage: 25, health: 100};
     var player2 = {name: 'Sandman', damage: 25, health: 100};
     //console.log(player1);
+    //console.log(player2);
 
-    var round = 0;
+    var fighters = [player1, player2];
+
+    var round = document.querySelector('#round');
+    //round = 0;
+    console.log(round);
+
+    var fightBtn = document.getElementById('fight_btn');
+    console.log(fightBtn);
 
     function fight(){   //fight functionality for the two player battle
         //console.log('in fight function');
-        var fightBtn = document.getElementById('#fight_btn');
-        console.log(fightBtn);
 
 
         //opening dialogue screen information
@@ -52,7 +58,7 @@ Assignment: Goal4: Assignment: The Duel - Part III
 
             if(results === "No Winner"){
                 round++;
-                //alert(player1[0] + ":" + player1[2] + "*Round*" + round + "*OVER*" + player2[0] + ":" + player2[2]);
+                alert(player1[0] + ":" + player1[2] + "*Round*" + round + "*OVER*" + player2[0] + ":" + player2[2]);
                 console.log(player1.name + ":" + player1.health + " ***Round " + round + " Over***" + player2.name + ":" + player2.health);
 
 
