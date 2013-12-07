@@ -10,96 +10,128 @@ Assignment: Goal4: Assignment: The Duel - Part III
     //Player Names, Damage, Remaining Health (Object with three keys created for both players
     var player1 = {name: 'Hulk', damage: 25, health: 100};
     var player2 = {name: 'Sandman', damage: 25, health: 100};
-    //console.log(player1);
-    //console.log(player2);
+    console.log(player1);
+    console.log(player2);
 
-    var fighters = [player1, player2];
+    //variables set within an array
+    var fighter = [player1, player2];
 
+        //displays fighter1 information on top bar
+        fighter[0] = document.getElementById('kabal');
+        console.log(fighter[0]);
+        //fighter[0].innerHTML = player1.name +': ';
 
+        //displays fighter 2 information on top bar
+        fighter[1] = document.getElementById('kratos');
+        console.log(fighter[1]);
+        //fighter[1].innerHTML = player2.name + ': ';
 
-    var round = document.getElementById('round');
-        round.innerHTML = 'ROUND: ';
-        //round = 0;
-        console.log(round);
-
+    //fightBtn initialize for data to be accessed for the per round click
     var fightBtn = document.getElementById('fight_btn');
-        fightBtn.addEventListener('click', onFight);
-        console.log(fightBtn);
+    fightBtn.addEventListener('click', onFight);
+    console.log(fightBtn);
+
+    //display Fight Result
+    var endResult = document.getElementsByClassName('clear');
+
+    //displays the fighter names
+    var score = document.getElementById('scores');
+
+    var round = 0;
+    console.log(round);
+
+    //round variable created to reflect upon click, round will be displayed
+    var roundNum = document.getElementById('round_number');
+        roundNum.innerHTML = 'Start Fight: ' + ' ROUND: ' + round;
+
 
 
     function fight(){   //fight functionality for the two player battle
         //console.log('in fight function');
 
-        fighters.innerHTML = player1.name + ":" + player1.health + ' ***START*** ' + player2.name + ":" + player2.health;
+        //= document.getElementById('scores')
+        score.innerHTML = player1.name + ': ' + player1.health + player2.name + ': ' + player2.health;
+        console.log(score);
 
-        //opening dialogue screen information
-        console.log(player1.name + ":" + player1.health + ' ***START*** ' + player2.name + ":" + player2.health);
+        //sets the player damage
+        var minDam1 = player1.damage * .5;
+        var minDam2 = player2.damage * .5;
 
-        for(var i = 0; i < 10; i++){    //if i is less than 10, run the loop
+        //to randomize the attack damage for each player
 
-            //random formula is: Math.floor(Math.random() * (max-min) + min);
+        var f1 = Math.floor(Math.random()*(player1.damage - minDam1) + minDam1);
+        var f2 = Math.floor(Math.random()*(player2.damage - minDam2) + minDam2);
+        console.log(f1);
+        console.log(f2);
 
-            var minDam1 = fighters[0].damage * .5;
-            var minDam2 = fighters[1].damage * .5;
+        //Fighter inflicted damage
+        player1.health-=f1;
+        player2.health-=f2;
 
-            //to randomize the attack damage for each player
-
-            var f1 = Math.floor(Math.random()*(fighters[0].damage - minDam1) + minDam1);
-            var f2 = Math.floor(Math.random()*(fighters[1].damage - minDam2) + minDam2);
-
-            console.log(f1);
-            console.log(f2);
-
-            //Fighter inflicted damage
-            player1.damage-=f1;
-            player2.damage-=f2;
-
-            console.log(player1.health);
-            console.log(player2.health);
-            console.log(player1.name + ":" + player1.health + " " + player2.name + ":" + player2.health);
+        //variable for the results of the fight
+        var results = winnerCheck();
+        console.log(results);
 
 
-            var results = winnerCheck();
 
-            console.log(results);
+        //if the results show that no one wins, then 'No Winner' displays
+        if(results === "No Winner"){
 
-            if(results === "No Winner"){
-                round++;
-                fighters.innerHTML = player1.name + ":" + player1.health + "*Round*" + round + "*OVER*" + player2.name + ":" + player2.health;
-                console.log(player1.name + ":" + player1.health + " ***Round " + round + " Over***" + player2.name + ":" + player2.health);
+            //round advances by one
+            round++;
+            score.innerHTML = player1.name + ': ' + player1.health + player2.name + ': ' + player2.health;
+            //alert(player1[0] + ":" + player1[2] + "*Round*" + round + "*OVER*" + player2[0] + ":" + player2[2]);
+
+
+            //displays fighters current health after each round
+            roundNum.innerHTML = 'Round: ' + round + ' Complete';
+            console.log(roundNum);
 
             }else{
-                return (results);
-                break;
+                //displays the results in html for score
+                score.innerHTML = results;
+
             }
-        }
     }
 
     function winnerCheck(){
 
         var result = "No Winner";
 
-        if(player1.health<1 && player2.health<1){
+        if(player1.health < 1 && player2.health < 1){
             result = "Both Pass On"
+            //if both pass on, then fightBtn stops working
+            fightBtn.removeEventListener('click', onFight);
 
-        }else if(player1.health<1){
-            result = player2.name + "WINS!!!"
+        }else if(player1.health < 1){
+            result = player2.name + " WINS!!!"
+            //if player1 wins, fightBtn stops working
+            fightBtn.removeEventListener('click', onFight);
 
-        }else if(player2.health<1){
-            result = player1.name + "WINS!!!!"
+        }else if(player2.health < 1){
+            result = player1.name + " WINS!!!!"
+            //if player2 wins, fightBtn stops working
+            fightBtn.removeEventListener('click', onFight);
 
         }
         return result;
+
+
+
     }
+
+    //clicking the button initiates the fight and starts each round
     function onFight(event){
         console.log('click');
 
-        winnerCheck();
+        //this is where the fight will execute
+        //console.log('program starts');
+        fight();
+
     }
 
 
-    //this is where the fight will execute
-    //console.log('program starts');
-    fight();
+
+
 
 })();
