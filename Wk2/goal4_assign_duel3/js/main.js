@@ -15,16 +15,22 @@ Assignment: Goal4: Assignment: The Duel - Part III
 
     var fighters = [player1, player2];
 
-    var round = document.querySelector('#round');
-    //round = 0;
-    console.log(round);
+
+
+    var round = document.getElementById('round');
+        round.innerHTML = 'ROUND: ';
+        //round = 0;
+        console.log(round);
 
     var fightBtn = document.getElementById('fight_btn');
-    console.log(fightBtn);
+        fightBtn.addEventListener('click', onFight);
+        console.log(fightBtn);
+
 
     function fight(){   //fight functionality for the two player battle
         //console.log('in fight function');
 
+        fighters.innerHTML = player1.name + ":" + player1.health + ' ***START*** ' + player2.name + ":" + player2.health;
 
         //opening dialogue screen information
         console.log(player1.name + ":" + player1.health + ' ***START*** ' + player2.name + ":" + player2.health);
@@ -33,23 +39,24 @@ Assignment: Goal4: Assignment: The Duel - Part III
 
             //random formula is: Math.floor(Math.random() * (max-min) + min);
 
-            var minDam1 = player1.damage * .5;
-            var minDam2 = player2.damage * .5;
+            var minDam1 = fighters[0].damage * .5;
+            var minDam2 = fighters[1].damage * .5;
 
             //to randomize the attack damage for each player
-            var f1 = Math.floor(Math.random()*(player1.damage - minDam1) + minDam1);
-            var f2 = Math.floor(Math.random()*(player2.damage - minDam2) + minDam2);
 
-            //console.log(f1);
-            //console.log(f2);
+            var f1 = Math.floor(Math.random()*(fighters[0].damage - minDam1) + minDam1);
+            var f2 = Math.floor(Math.random()*(fighters[1].damage - minDam2) + minDam2);
 
-            //inflict damage
+            console.log(f1);
+            console.log(f2);
+
+            //Fighter inflicted damage
             player1.damage-=f1;
             player2.damage-=f2;
 
-            //console.log(player1.health);
-            //console.log(player2.health);
-            //console.log(player1.name + ":" + player1.health + " " + player2.name + ":" + player2.health);
+            console.log(player1.health);
+            console.log(player2.health);
+            console.log(player1.name + ":" + player1.health + " " + player2.name + ":" + player2.health);
 
 
             var results = winnerCheck();
@@ -58,19 +65,15 @@ Assignment: Goal4: Assignment: The Duel - Part III
 
             if(results === "No Winner"){
                 round++;
-                alert(player1[0] + ":" + player1[2] + "*Round*" + round + "*OVER*" + player2[0] + ":" + player2[2]);
+                fighters.innerHTML = player1.name + ":" + player1.health + "*Round*" + round + "*OVER*" + player2.name + ":" + player2.health;
                 console.log(player1.name + ":" + player1.health + " ***Round " + round + " Over***" + player2.name + ":" + player2.health);
-
 
             }else{
                 return (results);
                 break;
-            };
-        };
-
-        winnerCheck();
-
-    };
+            }
+        }
+    }
 
     function winnerCheck(){
 
@@ -85,9 +88,15 @@ Assignment: Goal4: Assignment: The Duel - Part III
         }else if(player2.health<1){
             result = player1.name + "WINS!!!!"
 
-        };
+        }
         return result;
-    };
+    }
+    function onFight(event){
+        console.log('click');
+
+        winnerCheck();
+    }
+
 
     //this is where the fight will execute
     //console.log('program starts');

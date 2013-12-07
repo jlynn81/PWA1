@@ -1,8 +1,8 @@
 /*
  * GUESSING GAME:
  *
- * Created By: Jennifer Brown
- * Date: 5 December 2013
+ * Created By: Jennifer L. Brown
+ * Date: 6 December 2013
  * 
  * GUESSING GAME
  */
