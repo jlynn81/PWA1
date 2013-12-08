@@ -13,11 +13,12 @@ Assignment: Goal4: Assignment: The Duel - Part III
     console.log(player1);
     console.log(player2);
 
+
     //variables set within an array
     var fighter = [player1, player2];
 
         //displays fighter1 information on top bar
-        fighter[0] = document.getElementById('kabal');
+        fighter[0] = document.querySelectorAll('#kabal');
         console.log(fighter[0]);
         //fighter[0].innerHTML = player1.name +': ';
 
@@ -31,18 +32,15 @@ Assignment: Goal4: Assignment: The Duel - Part III
     fightBtn.addEventListener('click', onFight);
     console.log(fightBtn);
 
-    //display Fight Result
-    var endResult = document.getElementsByClassName('clear');
-
-    //displays the fighter names
-    var score = document.getElementById('scores');
+    //displays the Fighter Result
+    var score = document.querySelector('p');
 
     var round = 0;
     console.log(round);
 
     //round variable created to reflect upon click, round will be displayed
     var roundNum = document.getElementById('round_number');
-        roundNum.innerHTML = 'Start Fight: ' + ' ROUND: ' + round;
+        roundNum.innerHTML = 'Click to Start Fight ';
 
 
 
@@ -79,7 +77,7 @@ Assignment: Goal4: Assignment: The Duel - Part III
 
             //round advances by one
             round++;
-            score.innerHTML = player1.name + ': ' + player1.health + player2.name + ': ' + player2.health;
+            score.innerHTML = player1.name + ': ' + '' + player1.health + player2.name + ': ' + player2.health;
             //alert(player1[0] + ":" + player1[2] + "*Round*" + round + "*OVER*" + player2[0] + ":" + player2[2]);
 
 
@@ -97,6 +95,9 @@ Assignment: Goal4: Assignment: The Duel - Part III
     function winnerCheck(){
 
         var result = "No Winner";
+
+
+
 
         if(player1.health < 1 && player2.health < 1){
             result = "Both Pass On"
