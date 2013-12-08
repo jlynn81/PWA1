@@ -9,66 +9,66 @@
 
 (function(){
 
+    //variables set up for each input field
+    var userName = document.forms ['myform'] ['f_username'].value;
+    var email = document.forms ['myform'] ['f_email'].value;
+    var atpos = email.indexOf('@');
+    var dotpos = email.lastIndexOf('.');
+    var phNum = document.forms ['myform'] ['f_phone'].value;
+    var ssn = document.forms ['myform'] ['f_ssn'].value;
+    var passWord = document.forms ['myform'] ['f_password'].value;
+
+
+
     myform.onsubmit = function(e){
-
-        var userName = document.getElementById('f_username');
-
-        var email = document.getElementById('f_email');
-
-        var phNum = document.getElementById('f_phone');
-
-        var ssn = document.getElementById('f_ssn');
-
-        var passWord = document.getElementById('f_password');
-
-
-
 
         //Below is one example of the validateField call with an argument.
         //You must dynamically retrieve the ID name from the DOM/HTML.
 
-        validateField('myform');  //id = is the form input field ID
+        validateField(userName);  //id = is the form input field ID
+        validateField(email);
+        validateField(phNum);
+        validateField(ssn);
+        validateField(passWord);
 
         e.preventDefault();
         return false;
     };
 
 
-    var validateField = function(label){
+    var validateField = function(user){
     //You will need to create an else-if statement for each input field id.
     // The format will be similar to the IF statement.
 
-        if (HTMLLabelElement.name === 'f_username'){
-            var pattern = '/A-Za-z';
+        if (user === 'f_username'){
+            var pattern = 'a RegEx pattern goes here';
 
-
-
-        }else if(inputName.name === 'f_email'){
-            pattern = '^[w.-]+@[\w.-]+\.[A-Za-z]{2,6}$';
-
-        }else if(inputName.name === 'f_phone'){
+        }else if(user === 'f_email'){
             pattern = '';
 
-        }else if(inputName.name === 'f_ssn'){
+        }else if(user === 'f_phone'){
             pattern = '';
 
-        }else if(inputName.name === 'f_password'){
+        }else if(user === 'f_ssn'){
+            pattern = '';
+
+        }else if(user === 'f_password'){
             pattern = '';
 
         }
 
         var pass = 'the RegEx .test statement is needed here';
-        var errorMsg = inputName.nextSibling.nextSibling.nextSibling.nextSibling;
+        var errorMsg = user.nextSibling.nextSibling.nextSibling.nextSibling;
 
-        if (!pass || inputName.value.length < 2){
+        if (!pass || user.value.length < 2){
             errorMsg.style.display='block';
-            inputName.style.backgroundColor = 'red';
-        } else if (pass && inputName.value.length > 5){
+            user.style.backgroundColor = 'red';
+        } else if (pass && user.value.length > 5){
             errorMsg.style.display='none';
-            inputName.style.backgroundColor = 'green';
+            user.style.backgroundColor = 'green';
         } else {
             errorMsg.style.display='none';
-            inputName.style.backgroundColor = 'white';
+            user.style.backgroundColor = 'white';
         };
     };
 
