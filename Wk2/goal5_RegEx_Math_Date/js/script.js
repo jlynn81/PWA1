@@ -401,6 +401,20 @@ STUDENT ACTIVITY
 
     console.log('------------ Math Methods -------------------');
 
+    //console.log(document.getElementById('tagbox').innerHTML = Math.random());
+
+    var rand = (Math.random() * 10 + 1);//put the minimum num on the right hand side of +
+                                        //put the maximum num on the left of the +
+    console.log('rand: ', rand);
+    var num = Math.floor(rand);
+    console.log(num);//returns a num as a whole number
+
+    console.log(document.getElementById('tagbox').innerHTML = Math.min(5,10));
+    console.log(document.getElementById('tagbox').innerHTML = Math.max(5,10));
+    console.log(document.getElementById('tagbox').innerHTML = Math.round(2.5));//returns 3
+
+
+
 
 
     /******************************************************************************
@@ -419,6 +433,16 @@ STUDENT ACTIVITY
 
     ****************************************************************************/
 
+    console.log(Math.max(100, 1000, 50, 2, 55, 75)); //returns 1000
+    console.log(Math.min(100, 1000, 50, 2, 55, 75)); //returns 2
+
+    console.log(Math.floor(Math.random() * 10000 + 100));//returns a # between the max and min
+
+    var num = (Math.random() * 100 + 10);
+    console.log(num);
+
+    var num2 = (Math.round(num));
+    console.log(num2);
 
 
 
@@ -434,6 +458,17 @@ STUDENT ACTIVITY
 */
 
     console.log('------------ Date Methods -------------------');
+
+    console.log(new Date());
+
+    var d = new Date();
+    console.log(d.getDate());
+    console.log(d.getDay());
+    console.log(d.getFullYear());
+    console.log(d.getHours());
+    console.log(d.getMilliseconds());
+    console.log(d.getTime());//outputs a really large number (milliseconds since Jan 1, 1970)
+
 
 
 
