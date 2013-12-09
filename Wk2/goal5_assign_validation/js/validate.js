@@ -10,54 +10,52 @@
 (function(){
 
     //variables set up for each input field
-    var userName = document.forms ['myform'] ['f_username'].value;
-    var email = document.forms ['myform'] ['f_email'].value;
-        var atpos = email.indexOf('@');
-        var dotpos = email.lastIndexOf('.');
-    var phNum = document.forms ['myform'] ['f_phone'].value;
-    var ssn = document.forms ['myform'] ['f_ssn'].value;
-    var passWord = document.forms ['myform'] ['f_password'].value;
+    var userName = document.getElementById('f_username');
+    var email = document.getElementById('f_email');
 
 
+    var phNum = document.getElementById ('f_phone');
+    var ssn = document.getElementById ('f_ssn');
+    var passWord = document.getElementById('f_password');
 
-    myform.onsubmit = function(e){
+    var subBtn = document.getElementById("f_submit");
 
-        //Below is one example of the validateField call with an argument.
-        //You must dynamically retrieve the ID name from the DOM/HTML.
+     subBtn.addEventListener('click', onClick);
 
-        validateField(userName);  //id = is the form input field ID
-        validateField(email);
-        validateField(phNum);
-        validateField(ssn);
-        validateField(passWord);
-
+    function onClick(e){
+        console.log('Hi');
+        validate(userName);
+        validate(email);
+        validate(phNum);
+        validate(ssn);
+        validate(passWord);
         e.preventDefault();
-        return false;
-    };
+    }
 
+    function validate (user){
+        var pattern;
+        var pass;
 
-    var validateField = function(user){
-    //You will need to create an else-if statement for each input field id.
-    // The format will be similar to the IF statement.
+        if (user == userName){
+            pattern = /^[a-zA-Z]+(([\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$/;
+            pass = pattern.test(user.value);
+            console.log(user.value, pass);
+        }else if(user == email){
+            pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+            pass = pattern.test(user.value);
 
-        if (user === 'f_username'){
-            var pattern = /[A-Z]$+[a-z]$/;
-
-        }else if(user === 'f_email'){
-            email = /(\w[-._\w]*\w@\w[-._\w]*\w\.\w{2,3})/;
-
-        }else if(user === 'f_phone'){
-            pattern = '';
-
-        }else if(user === 'f_ssn'){
-            pattern = '';
-
-        }else if(user === 'f_password'){
-            pattern = '';
-
+        }else if(user == phNum){
+            pattern = /((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/;
+            pass = pattern.test(user.value);
+        }else if(user == ssn){
+            pattern = /^\d{3}-\d{2}-\d{4}$/;
+            pass = pattern.test(user.value);
+        }else if(user == passWord){
+            pattern = /^[a-zA-Z]\w{3,14}$/;
+            pass = pattern.test(user.value);
         }
 
-        var pass = 'the RegEx .test statement is needed here';
+
         var errorMsg = user.nextSibling.nextSibling.nextSibling.nextSibling;
 
         if (!pass || user.value.length < 2){
@@ -69,8 +67,11 @@
         } else {
             errorMsg.style.display='none';
             user.style.backgroundColor = 'white';
-        };
-    };
+        }
+
+    }
+
+
 
 })();  // end wrapper
 
