@@ -41,10 +41,10 @@
     // The format will be similar to the IF statement.
 
         if (user === 'f_username'){
-            var pattern = 'a RegEx pattern goes here';
+            var pattern = /[A-Z]$+[a-z]$/;
 
         }else if(user === 'f_email'){
-            pattern = '';
+            email = /(\w[-._\w]*\w@\w[-._\w]*\w\.\w{2,3})/;
 
         }else if(user === 'f_phone'){
             pattern = '';
