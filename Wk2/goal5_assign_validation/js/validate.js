@@ -12,8 +12,8 @@
     //variables set up for each input field
     var userName = document.forms ['myform'] ['f_username'].value;
     var email = document.forms ['myform'] ['f_email'].value;
-    var atpos = email.indexOf('@');
-    var dotpos = email.lastIndexOf('.');
+        var atpos = email.indexOf('@');
+        var dotpos = email.lastIndexOf('.');
     var phNum = document.forms ['myform'] ['f_phone'].value;
     var ssn = document.forms ['myform'] ['f_ssn'].value;
     var passWord = document.forms ['myform'] ['f_password'].value;
