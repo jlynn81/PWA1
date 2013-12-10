@@ -26,7 +26,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="223" column="62" selection-start="6731" selection-end="6731" vertical-scroll-proportion="4.501529" vertical-offset="624" max-vertical-offset="12448">
+            <state line="447" column="0" selection-start="13791" selection-end="13791" vertical-scroll-proportion="-1.1498471" vertical-offset="7904" max-vertical-offset="12448">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -49,7 +49,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="234" />
+    <option name="x" value="623" />
     <option name="y" value="22" />
     <option name="width" value="1036" />
     <option name="height" value="815" />
@@ -173,7 +173,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="234" y="22" width="1036" height="815" extended-state="1" />
+    <frame x="623" y="22" width="1036" height="815" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -228,7 +228,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="62" selection-start="6731" selection-end="6731" vertical-scroll-proportion="4.501529" vertical-offset="624" max-vertical-offset="12448">
+        <state line="447" column="0" selection-start="13791" selection-end="13791" vertical-scroll-proportion="-1.1498471" vertical-offset="7904" max-vertical-offset="12448">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
