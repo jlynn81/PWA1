@@ -12,15 +12,11 @@
     //variables set up for each input field
     var userName = document.getElementById('f_username');
     var email = document.getElementById('f_email');
-
-
     var phNum = document.getElementById ('f_phone');
     var ssn = document.getElementById ('f_ssn');
     var passWord = document.getElementById('f_password');
-
     var subBtn = document.getElementById("f_submit");
-
-     subBtn.addEventListener('click', onClick);
+        subBtn.addEventListener('click', onClick);
 
     function onClick(e){
         console.log('Hi');

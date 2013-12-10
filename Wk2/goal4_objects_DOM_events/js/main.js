@@ -181,31 +181,33 @@ STUDENT ACTIVITY 1:
  ----------------------------------------------------------------------------- */
 
 console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
+//objects w/ array
+//integrating multiple data types - object with an array of objects
 
-    var studInfo = {
-        school: 'Full Sail',
+    var obj1 = {
+        schoolName: 'Full Sail',
         address: '123 University Ave',
         studentCount: 16000,
-        students:{                      //{name:'Jane Doe', GPA:2.6, classes:['PWA1', 'PWA2']},
-            name: 'James Bond',         //{name:'Albert Einstein', GPA:4.0},
-            GPA: 3.9,
-            classes: ['PWA1', 'PWA2']
-        }
+        students:[
+            {name:'Jane Doe', GPA:2.6, classes:['PWA1', 'PWA2']},
+            {name:'Albert Einstein', GPA:4.0},
+            {name:'James Bond', GPA: 3.9}
 
+            ]
 
     };
 
-    console.log(studInfo.school);
-    console.log(studInfo['school']);
+    console.log(obj1.schoolName);
+    console.log(obj1['schoolName']);
 
     var newCt = 'studentCount';
-    console.log(studInfo[newCt]);
+    console.log(obj1[newCt]);
 
     var fieldName1 = "address";
-    console.log(studInfo[fieldName1]);
+    console.log(obj1[fieldName1]);
 
-    console.log("James Bond's GPA: ", studInfo.students.GPA);
-    console.log("James Bond's GPA: ", studInfo['students']['GPA']);
+    console.log("James Bond's GPA: ", obj1.students[2].GPA);
+    console.log("James Bond's GPA: ", obj1['students'][2]['GPA']);
 
 
 
@@ -226,22 +228,22 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
     2.  console.log the average grade by calling the gradeAvg method.
 ----------------------------------------------------------------------------- */
 
-    var gradeAvg = function(stud){
+    var gradeAvg = function(obj){
         var count = 0;
         var total = 0;
 
-        for (i = 0, j = stud.students.lenght; i < j; i++){
+        for (var i = 0, j = obj.students.lenght; i < j; i++){
             //when the loop runs it increases the count by one
             count++;
             //to get a grand total of GPA per student
-            total = total + studInfo.students[i]['GPA'];
+            total = total + obj1.students[i]['GPA'];
         }
-        return total/count;  //this gives the average
+        return total/count;  //this gives the average for all of the students
 
     };
 
 
-    console.log('Average Grade: ', gradeAvg(studInfo));
+    console.log('Average Grade: ', gradeAvg(obj1));
     //gradeAvg(studInfo); //passing the whole object from above
 
 
@@ -323,7 +325,7 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
     console.log(myArr.length); //returns an output of 2
 
 // #3 - shows and array of objects, inside of an object length
-    var studInfo = {
+    var obj1 = {
         school: 'Full Sail',
         address: '123 University Ave',
         studentCount: 16000,
@@ -335,7 +337,7 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
 
 
     };
-    console.log('number of object fields: ', studInfo.students.length); //this returned undefined
+    console.log('number of object fields: ', obj1.students.length); //this returned undefined
 
 console.log('------ MORE Object examples - Objects/Functions ----------');
 

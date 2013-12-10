@@ -26,7 +26,7 @@
       <file leaf-file-name="search.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="13" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.62957317" vertical-offset="547" max-vertical-offset="2016">
+            <state line="60" column="13" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.7608371" vertical-offset="451" max-vertical-offset="2016">
               <folding>
                 <marker date="1386609235000" expanded="false" signature="2338:2353" placeholder="..." />
               </folding>
@@ -37,7 +37,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="92" selection-start="548" selection-end="548" vertical-scroll-proportion="-10.88" vertical-offset="0" max-vertical-offset="592">
+            <state line="17" column="92" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="592">
               <folding />
             </state>
           </provider>
@@ -90,7 +90,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -125,6 +124,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -132,10 +132,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="settings.github" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -146,23 +154,15 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -221,6 +221,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/js/search.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="13" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.0" vertical-offset="547" max-vertical-offset="2016">
+          <folding>
+            <marker date="1386609235000" expanded="false" signature="2338:2353" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="92" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="592">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/search.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="28" selection-start="2103" selection-end="2103" vertical-scroll-proportion="0.0" vertical-offset="784" max-vertical-offset="2016">
           <folding>
             <marker date="1386609235000" expanded="false" signature="2338:2353" placeholder="..." />
@@ -235,21 +251,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="761">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="761" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="92" selection-start="548" selection-end="548" vertical-scroll-proportion="-10.88" vertical-offset="0" max-vertical-offset="592">
+        <state line="17" column="92" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="592">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="13" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.62957317" vertical-offset="547" max-vertical-offset="2016">
+        <state line="60" column="13" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.7608371" vertical-offset="451" max-vertical-offset="2016">
           <folding>
             <marker date="1386609235000" expanded="false" signature="2338:2353" placeholder="..." />
           </folding>

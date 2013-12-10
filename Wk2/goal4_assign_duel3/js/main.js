@@ -96,9 +96,6 @@ Assignment: Goal4: Assignment: The Duel - Part III
 
         var result = "No Winner";
 
-
-
-
         if(player1.health < 1 && player2.health < 1){
             result = "Both Pass On"
             //if both pass on, then fightBtn stops working
