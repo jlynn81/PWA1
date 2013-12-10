@@ -89,11 +89,36 @@
     console.log('Date: ' );
     console.log('Average GPA: ');
 
-    console.log()
+    console.log('Name: ', people.students[1].name);
+    console.log('Address: ', people.students[1].address.street + ' ' + people.students[1].address.city + ', ' + people.students[1].address.state);
+    console.log('GPA: ', people.students[1].GPA);
+    console.log('Date: ' );
+    console.log('Average GPA: ');
 
 
 
     console.log('************ Students with the added Student *************');
+
+    console.log('Name: ', people.students[0].name);
+    console.log('Address: ', people.students[0].address.street + ' ' + people.students[0].address.city + ', ' + people.students[0].address.state);
+    console.log('GPA: ', people.students[0].GPA);
+    console.log('Date: ' );
+    console.log('Average GPA: ');
+
+    console.log('Name: ', people.students[1].name);
+    console.log('Address: ', people.students[1].address.street + ' ' + people.students[1].address.city + ', ' + people.students[1].address.state);
+    console.log('GPA: ', people.students[1].GPA);
+    console.log('Date: ' );
+    console.log('Average GPA: ');
+
+    console.log('Name: ', people.students[2].name);
+    console.log('Address: ', people.students[2].address.street + ' ' + people.students[2].address.city + ', ' + people.students[2].address.state);
+    console.log('GPA: ', people.students[2].GPA);
+    console.log('Date: ' );
+    console.log('Average GPA: ');
+
+
+
 
     //Upon click Display next student
     //if you have come to the last student, remove the event for Btn and change text to Done
