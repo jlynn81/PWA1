@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae70d748-aa57-48e5-b700-954b24cbe97d" name="Default" comment="" />
-    <ignored path="goal4_objects_DOM_events.iws" />
+    <list default="true" id="34c4a3b5-f3c2-42dd-b82a-219241d7bb12" name="Default" comment="" />
+    <ignored path="goal6_assign_midterm.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,14 +19,23 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="goal4_objects_DOM_events" />
+    <favorites_list name="goal6_assign_midterm" />
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="31" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="1056">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="447" column="0" selection-start="13791" selection-end="13791" vertical-scroll-proportion="-1.1498471" vertical-offset="7904" max-vertical-offset="12448">
+            <state line="38" column="61" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.56269115" vertical-offset="240" max-vertical-offset="1792">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -44,14 +53,15 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="623" />
+    <option name="x" value="176" />
     <option name="y" value="22" />
-    <option name="width" value="1036" />
+    <option name="width" value="1081" />
     <option name="height" value="815" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -84,27 +94,27 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="goal4_objects_DOM_events" />
+              <option name="myItemId" value="goal6_assign_midterm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="goal4_objects_DOM_events" />
+              <option name="myItemId" value="goal6_assign_midterm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="goal4_objects_DOM_events" />
+              <option name="myItemId" value="goal6_assign_midterm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="goal4_objects_DOM_events" />
+              <option name="myItemId" value="goal6_assign_midterm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="goal4_objects_DOM_events" />
+              <option name="myItemId" value="goal6_assign_midterm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -121,18 +131,12 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="settings.github" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Wk1/goal3_assign_debug_v2" />
+    <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -143,15 +147,23 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -166,21 +178,21 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ae70d748-aa57-48e5-b700-954b24cbe97d" name="Default" comment="" />
-      <created>1386255026163</created>
-      <updated>1386255026163</updated>
+      <changelist id="34c4a3b5-f3c2-42dd-b82a-219241d7bb12" name="Default" comment="" />
+      <created>1386214388174</created>
+      <updated>1386214388174</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="623" y="22" width="1036" height="815" extended-state="0" />
+    <frame x="176" y="22" width="1081" height="815" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15399803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18809074" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -202,33 +214,69 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="31" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1056">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="398" column="0" selection-start="12251" selection-end="12251" vertical-scroll-proportion="0.0" vertical-offset="6336" max-vertical-offset="12416">
+        <state line="38" column="23" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1792">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="46" selection-start="1569" selection-end="1569" vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="1056">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="718" column="0" selection-start="23418" selection-end="23418" vertical-scroll-proportion="0.0" vertical-offset="11442" max-vertical-offset="12416">
+        <state line="6" column="0" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="192">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="46" selection-start="1569" selection-end="1569" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1056">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="447" column="0" selection-start="13791" selection-end="13791" vertical-scroll-proportion="-1.1498471" vertical-offset="7904" max-vertical-offset="12448">
+        <state line="6" column="0" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="192">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="31" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="1056">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="61" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.56269115" vertical-offset="240" max-vertical-offset="1792">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
