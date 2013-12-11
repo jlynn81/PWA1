@@ -232,11 +232,11 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
         var count = 0;
         var total = 0;
 
-        for (var i = 0, j = obj.students.lenght; i < j; i++){
+        for (var i = 0, j = obj.students.length; i < j; i++){
             //when the loop runs it increases the count by one
             count++;
             //to get a grand total of GPA per student
-            total = total + obj1.students[i]['GPA'];
+            total = total + obj.students[i]['GPA'];
         }
         return total/count;  //this gives the average for all of the students
 

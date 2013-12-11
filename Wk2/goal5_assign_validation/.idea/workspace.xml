@@ -26,7 +26,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="60" selection-start="3597" selection-end="3607" vertical-scroll-proportion="-20.48" vertical-offset="736" max-vertical-offset="1664">
+            <state line="78" column="60" selection-start="3597" selection-end="3607" vertical-scroll-proportion="0.0" vertical-offset="736" max-vertical-offset="1664">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="validate.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/validate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="876" selection-end="876" vertical-scroll-proportion="0.6956522" vertical-offset="64" max-vertical-offset="1296">
+            <state line="27" column="27" selection-start="779" selection-end="799" vertical-scroll-proportion="0.3838081" vertical-offset="176" max-vertical-offset="1296">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -90,7 +90,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -125,6 +124,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -132,8 +132,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="settings.github" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Wk1/goal3_assign_debug_v2" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -142,6 +142,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -152,23 +160,15 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -226,6 +226,22 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="60" selection-start="3597" selection-end="3607" vertical-scroll-proportion="0.0" vertical-offset="736" max-vertical-offset="1664">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="1296">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="60" selection-start="3597" selection-end="3607" vertical-scroll-proportion="0.0" vertical-offset="736" max-vertical-offset="1664">
@@ -296,14 +312,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="60" selection-start="3597" selection-end="3607" vertical-scroll-proportion="-20.48" vertical-offset="736" max-vertical-offset="1664">
+        <state line="78" column="60" selection-start="3597" selection-end="3607" vertical-scroll-proportion="0.0" vertical-offset="736" max-vertical-offset="1664">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/validate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="876" selection-end="876" vertical-scroll-proportion="0.6956522" vertical-offset="64" max-vertical-offset="1296">
+        <state line="27" column="27" selection-start="779" selection-end="799" vertical-scroll-proportion="0.3838081" vertical-offset="176" max-vertical-offset="1296">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

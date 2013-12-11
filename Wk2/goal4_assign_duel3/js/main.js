@@ -20,7 +20,7 @@ Assignment: Goal4: Assignment: The Duel - Part III
         //displays fighter1 information on top bar
         fighter[0] = document.querySelectorAll('#kabal');
         console.log(fighter[0]);
-        //fighter[0].innerHTML = player1.name +': ';
+        fighter[0].innerHTML = player1.name +': ' + player1.health + ': ';
 
         //displays fighter 2 information on top bar
         fighter[1] = document.getElementById('kratos');
@@ -78,7 +78,6 @@ Assignment: Goal4: Assignment: The Duel - Part III
             //round advances by one
             round++;
             score.innerHTML = player1.name + ': ' + '' + player1.health + player2.name + ': ' + player2.health;
-            //alert(player1[0] + ":" + player1[2] + "*Round*" + round + "*OVER*" + player2[0] + ":" + player2[2]);
 
 
             //displays fighters current health after each round
