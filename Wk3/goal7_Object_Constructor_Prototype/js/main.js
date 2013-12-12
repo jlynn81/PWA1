@@ -6,6 +6,7 @@
 // application scope (self-executing function)
 (function(){
 
+
 /*	
     ==================================================================
     more.Objects
@@ -29,7 +30,7 @@
 */
 
 	// get the location of the blog button
-
+    var button = document.getElementById('blog_btn');
 
 /************************************************************************
     Blog constructor:
@@ -46,6 +47,10 @@
     - just like any other function, we can pass arguments into it
     - any variables declared inside the constructor function’s scope are considered
         local to the function (cannot be accessed outside of it)
+    - if a function is invoked using the keyword: new, it is executed as a
+        constructor - the constructor is called to initialize an object upon creation
+    - this causes the function to return an object with properties inherited from the
+        function itself
 
     - below is a constructor for a Blog object that creates and initializes properties
         for the text and date
@@ -67,6 +72,63 @@
         local variable within the constructor
  -----------------------------------------------------------------------
  */
+    //this is your constructor
+
+    var Blog = function(str, date) {
+
+    //these are the properties passed into the function
+    this.body = str;
+    this.date = date;
+
+//    this.toHTML = function(highlight){
+//
+//        var blogHTML = "";
+//
+//        blogHTML += highlight ? "<p style='background-color: #EEEEEE' >" : "<p>";
+//        //above is your if / else statement
+//        blogHTML += "<strong>" + (this.date.getMonth() + 1) + "/" +
+//            this.date.getDate() + "/" +
+//            this.date.getFullYear() + "</strong><br/>" +
+//            this.body + "</p>";
+//
+//        return blogHTML;
+//    };
+//
+//    this.toString = function(){
+//        console.log("[ " + (this.date.getMonth() + 1) + "/" + this.date.getDate() + "/" +
+//            this.date.getFullYear() + "] " + this.body );
+//
+//
+//    };
+
+//    console.log(" ' str' is equal to: ", str);
+//    console.log(" ' this.body' is equal to: ", this.body);
+
+};//close constructor
+
+    Blog.prototype.companyName = "FullSail";//a way to add another property to objects created
+
+    Blog.prototype.toHTML = function(highlight){
+
+        var blogHTML = "";
+
+        blogHTML += highlight ? "<p style='background-color: #EEEEEE' >" : "<p>";
+        //above is your if / else statement
+        blogHTML += "<strong>" + (this.date.getMonth() + 1) + "/" +
+            this.date.getDate() + "/" +
+            this.date.getFullYear() + "</strong><br/>" +
+            this.body + "</p>";
+
+        return blogHTML;
+    };
+
+    Blog.prototype.toString = function(){
+
+        console.log("[ " + (this.date.getMonth() + 1) + "/" + this.date.getDate() + "/" +
+            this.date.getFullYear() + "] " + this.body );
+
+
+    };
 
 
     // array of blog items
@@ -76,12 +138,50 @@
     // manually create an object using the Blog constructor to establish the objects
     //      structure and display all the information in the body of the HTML
 
-    //    var blog = [
-    //        new Blog('Learned about functions, and how to pass parameters into them.', '04/2/2013'),
-    //        new Blog('Learned about objects, and how to set keys and get values.', '04/15/2013'),
-    //        new Blog('I love reading regular expressions.  I normally read a few lines right before falling asleep.  It is really good sleeping material.', '04/18/2013'),
-    //        new Blog('What\'s all this new object stuff (i.e THIS, prototype, etc...)', '08/21/2008')
-    //    ];
+    //feeding it data of objects to create the 4 different objects
+    //use new Blog
+
+
+        var blog = [
+            new Blog('Learned about functions, and how to pass parameters into them.', new Date('04/2/2013')),
+            new Blog('Learned about objects, and how to set keys and get values.', new Date('04/15/2013')),
+            new Blog('I love reading regular expressions.  I normally read a few lines right before falling asleep.  It is really good sleeping material.', new Date('04/18/2013')),
+            new Blog('What\'s all this new object stuff (i.e THIS, prototype, etc...)', new Date('08/21/2008'))
+        ];
+
+        var showBlog = function(e){
+
+
+            var i = 0,
+                blogText = ""; //holds the information for the Blog text
+
+            while(i < blog.length) {
+
+                blogText += blog[i].toHTML(i % 2 === 0);
+
+                blog[i].toString();
+
+                i++; //should stop the loop after all have been looped through
+
+            };
+
+            //var tmpName = blog[0].companyName = 'FullSail';
+
+            console.log(blog[0].companyName);
+            console.log(blog[1].companyName);
+            console.log(blog[2].companyName);
+            console.log(blog[3].companyName);
+
+            document.getElementById('blog').innerHTML = blogText; //tells the system where to write the blogText
+
+            e.preventDefault();
+            return false;
+
+
+
+        };
+
+    button.onclick = showBlog;
 
 
 
