@@ -163,7 +163,7 @@
 
                 i++; //should stop the loop after all have been looped through
 
-            };
+            }
 
             //var tmpName = blog[0].companyName = 'FullSail';
 

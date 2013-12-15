@@ -96,17 +96,17 @@ Assignment: Goal4: Assignment: The Duel - Part III
         var result = "No Winner";
 
         if(player1.health < 1 && player2.health < 1){
-            result = "Both Pass On"
+            result = "Both Pass On";
             //if both pass on, then fightBtn stops working
             fightBtn.removeEventListener('click', onFight);
 
         }else if(player1.health < 1){
-            result = player2.name + " WINS!!!"
+            result = player2.name + " WINS!!!";
             //if player1 wins, fightBtn stops working
             fightBtn.removeEventListener('click', onFight);
 
         }else if(player2.health < 1){
-            result = player1.name + " WINS!!!!"
+            result = player1.name + " WINS!!!!";
             //if player2 wins, fightBtn stops working
             fightBtn.removeEventListener('click', onFight);
 
