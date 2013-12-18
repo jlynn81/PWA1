@@ -37,7 +37,17 @@
 
     /* Create an Arena to fight in!
     ------------------------------------------------------------------------------------ */
-	
+	var thunderDome = new Arena ( {
+        name: 'The Thunder Dome',
+        location: 'Skyrim'
+    });
+
+    thunderDome.register(gandolf);
+    thunderDome.register(dementor);
+    thunderDome.register(merlin);
+
+    //create a random fight
+
 
 
 })();

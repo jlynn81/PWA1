@@ -40,6 +40,8 @@
         console.log(people);
 
 
+
+
     }
 
     displayNames();
