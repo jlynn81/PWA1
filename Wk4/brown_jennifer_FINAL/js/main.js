@@ -2,7 +2,7 @@
  Name: Jennifer L Brown
  Date: 3 December 2013
  Class & Section:  PWA1-####
- Comments: "Mid Terms for PWA-1"
+ Comments: "Final Practical"
  */
 
 (function(){
@@ -23,16 +23,7 @@
     };
 
     addData();
-
-    //Upon click Display next student
-    function onClick(event){
-        console.log('click');
-
-        displayData();
-        event.preventDefault();
-
-    }
-
+   
     for (var key in people.students){
         //displays all of the information for each object (array) to include the added object (array)
         //console.log('Name: [',key,']:', people.students[key]);
@@ -57,6 +48,7 @@
             console.log('GPA: ', people[key][1].GPA);
             console.log('Date: ', d.toDateString());
 
+
         }
     }
 
@@ -77,6 +69,7 @@
 
             //if you have come to the last student, nextBtn is disabled and reflects 'DONE!!!' inside the button
         }else if(people.students.length < 1){
+
             document.getElementById("info_btn").innerHTML = 'Done!!!';
         }
 
@@ -98,6 +91,17 @@
         return total/grade;
 
     };
+
+    //Upon click Display next student
+    function onClick(event){
+        console.log('click');
+
+        displayData();
+
+    }
+
+
+
     //console.log('Average Grade: ', gradeAvg(people));
 
 
