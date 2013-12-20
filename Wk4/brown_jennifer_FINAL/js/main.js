@@ -13,49 +13,44 @@
 
     var d = new Date();
 
-    //Student Information
-    var people = {
-            students: [
-                {name: 'Jane Doe', address: {street: '123 Cold Ave', city: 'Frosty', state: 'North Pole'}, GPA:[2.7, 4.0, 3.75]},
-                {name: 'John Doe', address: {street: '123 Frosty Street', city: 'Frozen', state: 'South Pole'}, GPA:[3.4, 4.0, 3.25]}
+    var students = [];
 
-            ]
-    };
+    //Student Information
+    var student1 = new Student('Rosey Elf', '123 Cold Ave', 'Frosty', 'North Pole', [2.7, 4.0, 3.75]);
+    student1.getStudent();
+
+    var student2 = new Student('Icey Cold', '123 Frosty Street', 'Frozen', 'South Pole', [3.4, 4.0, 3.25]);
+    student2.getStudent();
+
+    console.log('*********** Original Student List ************');
+
+    console.log('Name: ' + student1.name);
+    console.log('Address: ' + student1.street + ' ' + student1.city + ', ' + student1.state);
+
+    console.log('GPA: ', student1.GPA);
+    console.log('Date: ', student1.toDateString());
+
+
+    console.log('Name: ', student3.name);
+    console.log('Address: ', people[key][1].address.street + ' ' + people[key][1].address.city + ', ' + people[key][1].address.state);
+    console.log('GPA: ', people[key][1].GPA);
+    console.log('Date: ', d.toDateString());
+
 
     addData();
-   
-    for (var key in people.students){
-        //displays all of the information for each object (array) to include the added object (array)
-        //console.log('Name: [',key,']:', people.students[key]);
-    }
 
 
     //addData function adds the extra student onto the end of the above array
     function addData(){
-        people.students.push({name: 'Santa Claus', address: {street: '123 Big Dreams Place', city: 'Rudolph', state: 'North Pole'}, GPA: [4.0, 3.75, 4.0]});
-
-        console.log('*********** Original Student List ************');
-        for (var key in people){
-            console.log('Name: ' + people[key][0].name);
-            console.log('Address: ' + people[key][0].address.street + ' ' + people[key][0].address.city + ', ' + people[key][0].address.state);
-
-            console.log('GPA: ', people[key][0].GPA);
-            console.log('Date: ', d.toDateString());
+        var student3 = new Student('Santa Claus', '123 Big Dreams Place', 'Rudolph', 'North Pole', [4.0, 3.75, 4.0]);
+        student3.getStudent();
 
 
-            console.log('Name: ', people[key][1].name);
-            console.log('Address: ', people[key][1].address.street + ' ' + people[key][1].address.city + ', ' + people[key][1].address.state);
-            console.log('GPA: ', people[key][1].GPA);
-            console.log('Date: ', d.toDateString());
 
-
-        }
     }
 
     function displayData(){
 
-        var val = people.students.shift();
-        people.students.push(val);
         document.getElementById('name').innerHTML = 'Name: ' + people.students[0]['name'];
         document.getElementById('address').innerHTML = 'Address: ' + people.students[0].address['street'] + ' ' + people.students[0].address['city'] + ' ' + people.students[0].address['state'];
         document.getElementById('gpa').innerHTML = 'GPA: ' + people.students[0]['GPA'];
@@ -100,9 +95,6 @@
 
     }
 
-
-
-    //console.log('Average Grade: ', gradeAvg(people));
 
 
 

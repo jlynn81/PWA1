@@ -5,15 +5,28 @@
  Comments: "Final Practical"
  */
 
-var People = function(){
+var Student = function(name, street, city, state, GPA){
 
-    return new People.prototype.init;
+    //Student Information
+    this.name = name;
+    this.street = street;
+    this.city = city;
+    this.state = state;
+    this.GPA = [];
+
+    this.date = new Date();
+
+    return Student.prototype;
 
 };
 
-People.prototype = {
+Student.prototype = {
+
+    getStudent: function(){
+        return this.name + ' ' + this.street + ' ' + this.city + ' ' + this.state + ' ' + this.GPA + ' ' + this.date;
 
 
+    }
 
 
 };
