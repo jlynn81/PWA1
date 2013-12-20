@@ -2,7 +2,7 @@
  Name: Jennifer L Brown
  Date: 3 December 2013
  Class & Section:  PWA1-####
- Comments: "Final Practical"
+ Comments: "Mid Terms for PWA-1"
  */
 
 (function(){
@@ -13,21 +13,30 @@
 
     var d = new Date();
 
-    var students = [];
-
     //Student Information
-
     var people = {
-        students: [
-            {name: 'Jane Doe', address: {street: '123 Cold Ave', city: 'Frosty', state: 'North Pole'}, GPA:[2.7, 4.0, 3.75]},
-            {name: 'John Doe', address: {street: '123 Frosty Street', city: 'Frozen', state: 'South Pole'}, GPA:[3.4, 4.0, 3.25]}
+            students: [
+                {name: 'Jane Doe', address: {street: '123 Cold Ave', city: 'Frosty', state: 'North Pole'}, GPA:[2.7, 4.0, 3.75]},
+                {name: 'John Doe', address: {street: '123 Frosty Street', city: 'Frozen', state: 'South Pole'}, GPA:[3.4, 4.0, 3.25]}
 
-    console.log('*********** Original Student List ************');
+            ]
+    };
 
-    console.log('Name: ' + student1.name);
-    console.log('Address: ' + student1.street + ' ' + student1.city + ', ' + student1.state);
-    console.log('GPA: ', student1.GPA);
-    console.log('Date: ', student1.toDateString());
+    addData();
+
+    //Upon click Display next student
+    function onClick(event){
+        console.log('click');
+
+        displayData();
+        event.preventDefault();
+
+    }
+
+    for (var key in people.students){
+        //displays all of the information for each object (array) to include the added object (array)
+        //console.log('Name: [',key,']:', people.students[key]);
+    }
 
 
     //addData function adds the extra student onto the end of the above array
@@ -49,12 +58,12 @@
             console.log('Date: ', d.toDateString());
 
         }
-
-
     }
 
     function displayData(){
 
+        var val = people.students.shift();
+        people.students.push(val);
         document.getElementById('name').innerHTML = 'Name: ' + people.students[0]['name'];
         document.getElementById('address').innerHTML = 'Address: ' + people.students[0].address['street'] + ' ' + people.students[0].address['city'] + ' ' + people.students[0].address['state'];
         document.getElementById('gpa').innerHTML = 'GPA: ' + people.students[0]['GPA'];
@@ -68,7 +77,6 @@
 
             //if you have come to the last student, nextBtn is disabled and reflects 'DONE!!!' inside the button
         }else if(people.students.length < 1){
-
             document.getElementById("info_btn").innerHTML = 'Done!!!';
         }
 
@@ -90,15 +98,7 @@
         return total/grade;
 
     };
-
-    //Upon click Display next student
-    function onClick(event){
-        console.log('click');
-
-        displayData();
-
-    }
-
+    //console.log('Average Grade: ', gradeAvg(people));
 
 
 

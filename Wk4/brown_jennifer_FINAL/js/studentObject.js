@@ -5,16 +5,14 @@
  Comments: "Final Practical"
  */
 
-var Student = function(name, street, city, state, GPA){
+var Student = function(name,GPA,date){
+
+    this.name = name;
+    this.GPA = GPA;
+    this.date = date;
+
 
     //Student Information
-    this.name = name;
-    this.street = street;
-    this.city = city;
-    this.state = state;
-    this.GPA = [];
-
-    this.date = new Date();
 
     return Student.prototype;
 
@@ -22,14 +20,16 @@ var Student = function(name, street, city, state, GPA){
 
 Student.prototype = {
 
-    getStudent: function(){
-        return this.name + ' ' + this.street + ' ' + this.city + ' ' + this.state + ' ' + this.GPA + ' ' + this.date;
 
+
+    getAverage: function(){
 
     }
 
 
 };
+
+Student.prototype.getStudent.prototype = Student.prototype;
 
 
 
