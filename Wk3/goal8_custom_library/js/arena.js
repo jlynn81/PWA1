@@ -24,7 +24,7 @@ Arena.prototype = {
 
         while(f1 === f2){
             f2 = Math.floor(Math.random() * this.fighters.length);
-        };
+        }
 
         var fighter1 = this.fighters[f1];
         var fighter2 = this.fighters[f2];

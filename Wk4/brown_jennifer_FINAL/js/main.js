@@ -13,21 +13,18 @@
 
     var d = new Date();
 
-    var students = [];
 
     //Student Information
 
+//    var student1 = new Student('Ice Freeze');
+//    student1.name = 'Ice Freeze';
+
     var people = {
         students: [
-            {name: 'Jane Doe', address: {street: '123 Cold Ave', city: 'Frosty', state: 'North Pole'}, GPA:[2.7, 4.0, 3.75]},
-            {name: 'John Doe', address: {street: '123 Frosty Street', city: 'Frozen', state: 'South Pole'}, GPA:[3.4, 4.0, 3.25]}
-
-    console.log('*********** Original Student List ************');
-
-    console.log('Name: ' + student1.name);
-    console.log('Address: ' + student1.street + ' ' + student1.city + ', ' + student1.state);
-    console.log('GPA: ', student1.GPA);
-    console.log('Date: ', student1.toDateString());
+            {name: 'Ice Freeze', address: {street: '123 Cold Ave', city: 'Frosty', state: 'North Pole'}, GPA:[2.7, 4.0, 3.75]},
+            {name: 'Rusty Reindeer', address: {street: '123 Frosty Street', city: 'Frozen', state: 'South Pole'}, GPA:[3.4, 4.0, 3.25]}
+        ]
+    };
 
 
     //addData function adds the extra student onto the end of the above array
@@ -47,6 +44,7 @@
             console.log('Address: ', people[key][1].address.street + ' ' + people[key][1].address.city + ', ' + people[key][1].address.state);
             console.log('GPA: ', people[key][1].GPA);
             console.log('Date: ', d.toDateString());
+
 
         }
 
@@ -90,6 +88,7 @@
         return total/grade;
 
     };
+    addData()
 
     //Upon click Display next student
     function onClick(event){

@@ -26,7 +26,7 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="21" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="928">
+            <state line="35" column="7" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="928">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="wizard.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/wizard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="25" selection-start="514" selection-end="514" vertical-scroll-proportion="0.58715594" vertical-offset="0" max-vertical-offset="720">
+            <state line="14" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.34250763" vertical-offset="0" max-vertical-offset="720">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -46,7 +46,7 @@
       <file leaf-file-name="arena.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/arena.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+            <state line="12" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
@@ -72,9 +72,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/arena.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/wizard.js" />
+        <option value="$PROJECT_DIR$/js/arena.js" />
       </list>
     </option>
   </component>
@@ -156,6 +156,42 @@
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -299,23 +335,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/js/arena.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="21" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="928">
+        <state line="12" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/arena.js">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+        <state line="35" column="7" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="928">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/wizard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="25" selection-start="514" selection-end="514" vertical-scroll-proportion="0.58715594" vertical-offset="0" max-vertical-offset="720">
+        <state line="14" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.34250763" vertical-offset="0" max-vertical-offset="720">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

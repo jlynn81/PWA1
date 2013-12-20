@@ -26,7 +26,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="0" selection-start="5085" selection-end="5085" vertical-scroll-proportion="-0.5382263" vertical-offset="2320" max-vertical-offset="3088">
+            <state line="80" column="21" selection-start="3764" selection-end="3764" vertical-scroll-proportion="0.34250763" vertical-offset="1056" max-vertical-offset="3088">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <marker date="1387049040000" expanded="true" signature="4772:4797" placeholder="..." />
@@ -296,7 +296,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="0" selection-start="5085" selection-end="5085" vertical-scroll-proportion="-0.5382263" vertical-offset="2320" max-vertical-offset="3088">
+        <state line="80" column="21" selection-start="3764" selection-end="3764" vertical-scroll-proportion="0.34250763" vertical-offset="1056" max-vertical-offset="3088">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <marker date="1387049040000" expanded="true" signature="4772:4797" placeholder="..." />
