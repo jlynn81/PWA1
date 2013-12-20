@@ -30,29 +30,16 @@
 
    });
 
-    console.log(student1, student2);
-
-    addData();
+    //console.log(student1, student2);
 
 
     //addData function adds the extra student onto the end of the above array
     function addData(){
-        var student3 = new Student({name: 'Santa Claus', address: {street: '123 Big Dreams Place', city: 'Rudolph', state: 'North Pole'}, GPA: [4.0, 3.75, 4.0]});
-
-        console.log('*********** Original Student List ************');
-
-            console.log('Name: ' + student1.name);
-            console.log('Address: ' + student1.address.street + ' ' + student1.address.city + ', ' + student1.address.state);
-
-            console.log('GPA: ', student1.GPA);
-            console.log('Date: ', date.getDate());
-
-
-            console.log('Name: ', student2.name);
-            console.log('Address: ', student2.address.street + ' ' + student2.address.city + ', ' + student2.address.state);
-            console.log('GPA: ', student2.GPA);
-            console.log('Date: ', date.getDate());
-
+        var student3 = new Student({
+            name: 'Santa Claus',
+            address: {street: '123 Big Dreams Place', city: 'Rudolph', state: 'North Pole'},
+            GPA: [4.0, 3.75, 4.0]
+        });
 
 
 
@@ -68,9 +55,9 @@
         document.getElementById('gpaavg').innerHTML = 'Average GPA: ' + gradeAvg(people);
 
         //code that will advance the students by one upon click
-        if(people.students.length === 0){
+        if(Students.length === 0){
             //advances the student by one upon clicking the nextBtn
-            people.students++;
+            Students.students++;
 
             //if you have come to the last student, nextBtn is disabled and reflects 'DONE!!!' inside the button
         }else if(people.students.length < 1){
@@ -78,24 +65,26 @@
             document.getElementById("info_btn").innerHTML = 'Done!!!';
         }
 
+        addData();
+
+        console.log('*********** Original Student List ************');
+
+        console.log('Name: ' + student1.name);
+        console.log('Address: ' + student1.address.street + ' ' + student1.address.city + ', ' + student1.address.state);
+
+        console.log('GPA: ', student1.GPA);
+        console.log('Date: ', date.getDate());
+
+
+        console.log('Name: ', student2.name);
+        console.log('Address: ', student2.address.street + ' ' + student2.address.city + ', ' + student2.address.state);
+        console.log('GPA: ', student2.GPA);
+        console.log('Date: ', date.getDate());
+
+
+
     }
 
-    //GPA function for the loop to calculate the average
-    var gradeAvg = function (obj){
-        var grade = 0;
-        var total = 0;
-
-        //loops through the GPA values for the average calculation
-        for (var i = 0, j = obj.students.length; i < j; i++){
-            //grade will increase by 1 when ran to go through all of the array elements
-            grade++;
-            //adds all of the GPA's per student
-            total = total + obj.students[i]['GPA'];
-        }
-        //this will give the average for each student
-        return total/grade;
-
-    };
 
 
 
@@ -112,19 +101,19 @@
         console.log('Name: ', student1.name);
         console.log('Address: ', student1.address.street + ' ' + student1.address.city + ', ' + student1.address.state);
         console.log('GPA: ', gradeAvg(Student));
-        console.log('Date: ', d.toDateString());
+        console.log('Date: ', date.toDateString());
 
         //student 2 information
         console.log('Name: ', student2.name);
         console.log('Address: ', student2.address.street + ' ' + student2.address.city + ', ' + student2.address.state);
         console.log('GPA: ', student2.GPA);
-        console.log('Date: ', d.toDateString());
+        console.log('Date: ', date.toDateString());
 
         //Added Students information
         console.log('Name: ', student3.name);
         console.log('Address: ', people.students[2].address.street + ' ' + people.students[2].address.city + ', ' + people.students[2].address.state);
         console.log('GPA: ', people.students[2].GPA);
-        console.log('Date: ', d.toDateString());
+        console.log('Date: ', date.toDateString());
 
 
 

@@ -27,8 +27,21 @@ Student.prototype = {
 
     },
 
-    averageGPA: function () {
+    averageGPA: function (obj) {
 
+        var grade = 0;
+        var total = 0;
+
+        //loops through the GPA values for the average calculation
+
+        for (var i = 0, j = obj.students.length; i < j; i++){
+            //grade will increase by 1 when ran to go through all of the array elements
+            grade++;
+            //adds all of the GPA's per student
+            total = total + obj.students[i]['GPA'];
+        }
+        //this will give the average for each student
+        return total/grade;
 
 
     }
