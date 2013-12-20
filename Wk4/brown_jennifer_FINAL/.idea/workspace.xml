@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="34c4a3b5-f3c2-42dd-b82a-219241d7bb12" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/studentObject.js" afterPath="$PROJECT_DIR$/js/studentObject.js" />
     </list>
     <ignored path="goal6_assign_midterm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,19 +34,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="studentObject.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="studentObject.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/studentObject.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="455" selection-end="455" vertical-scroll-proportion="0.59970015" vertical-offset="0" max-vertical-offset="752">
+            <state line="23" column="0" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="752">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="58" selection-start="1639" selection-end="1639" vertical-scroll-proportion="-19.92" vertical-offset="414" max-vertical-offset="1072">
+            <state line="58" column="57" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.80062306" vertical-offset="414" max-vertical-offset="1088">
               <folding />
             </state>
           </provider>
@@ -72,9 +70,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/studentObject.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -335,9 +333,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/studentObject.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="58" selection-start="1639" selection-end="1639" vertical-scroll-proportion="-19.92" vertical-offset="414" max-vertical-offset="1072">
+        <state line="23" column="0" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="752">
           <folding />
         </state>
       </provider>
@@ -349,9 +347,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/studentObject.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="455" selection-end="455" vertical-scroll-proportion="0.59970015" vertical-offset="0" max-vertical-offset="752">
+        <state line="58" column="57" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.80062306" vertical-offset="414" max-vertical-offset="1088">
           <folding />
         </state>
       </provider>

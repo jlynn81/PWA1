@@ -43,19 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="arena.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="arena.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/arena.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.28785607" vertical-offset="0" max-vertical-offset="720">
+            <state line="12" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="74" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="528">
+            <state line="10" column="74" selection-start="315" selection-end="315" vertical-scroll-proportion="0.24922119" vertical-offset="0" max-vertical-offset="642">
               <folding />
             </state>
           </provider>
@@ -328,13 +328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="74" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="528">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="21" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0" vertical-offset="274" max-vertical-offset="928">
@@ -353,7 +346,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/arena.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.28785607" vertical-offset="0" max-vertical-offset="720">
+        <state line="12" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="74" selection-start="315" selection-end="315" vertical-scroll-proportion="0.24922119" vertical-offset="0" max-vertical-offset="642">
           <folding />
         </state>
       </provider>
