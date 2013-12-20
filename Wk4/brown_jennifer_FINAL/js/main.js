@@ -16,15 +16,22 @@
 
     //Student Information
 
-//    var student1 = new Student('Ice Freeze');
-//    student1.name = 'Ice Freeze';
+   var student1 = new Student({
+       name: 'Ice Freeze',
+       address:{street: '123 Cold Ave', city: 'Frosty', state: 'North Pole'},
+       GPA:[2.7, 4.0, 3.75]
 
-    var people = {
-        students: [
-            {name: 'Ice Freeze', address: {street: '123 Cold Ave', city: 'Frosty', state: 'North Pole'}, GPA:[2.7, 4.0, 3.75]},
-            {name: 'Rusty Reindeer', address: {street: '123 Frosty Street', city: 'Frozen', state: 'South Pole'}, GPA:[3.4, 4.0, 3.25]}
-        ]
-    };
+   });
+
+   var student2 = new Student({
+       name:'Rusty Reindeer',
+       address:{street: '123 Frosty Street', city: 'Frozen', state: 'South Pole'},
+       GPA:[3.4, 4.0, 3.25]
+
+   });
+
+    console.log(student1, student2);
+
 
 
     //addData function adds the extra student onto the end of the above array
@@ -88,7 +95,8 @@
         return total/grade;
 
     };
-    addData()
+
+    addData();
 
     //Upon click Display next student
     function onClick(event){

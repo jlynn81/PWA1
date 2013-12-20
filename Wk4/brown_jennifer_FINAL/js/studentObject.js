@@ -5,12 +5,13 @@
  Comments: "Final Practical"
  */
 
-var Student = function(data){
+var Student = function(options){
 
     //Student Information
-    this.name = data.name;
-    this.GPA = data.GPA;
-    this.date = data.date;
+    this.name = options.name;
+    this.address = options.address;
+    this.GPA = options.GPA;
+    this.date = options.date;
 
 };
 
@@ -19,16 +20,16 @@ Student.prototype = {
     students: [],
 
 
-    getStudent: function(data){
+    getStudent: function(people){
 
+       this.students.push(people);
 
-        this.street = data.street;
-        this.city = data.city;
-        this.state = data.state;
 
     },
 
     averageGPA: function () {
+
+
 
     }
 

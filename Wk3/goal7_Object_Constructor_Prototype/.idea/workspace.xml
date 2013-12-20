@@ -26,7 +26,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="21" selection-start="3764" selection-end="3764" vertical-scroll-proportion="0.34250763" vertical-offset="1056" max-vertical-offset="3088">
+            <state line="77" column="0" selection-start="3665" selection-end="3665" vertical-scroll-proportion="0.9785933" vertical-offset="592" max-vertical-offset="3088">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <marker date="1387049040000" expanded="true" signature="4772:4797" placeholder="..." />
@@ -59,9 +59,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="878" />
+    <option name="x" value="766" />
     <option name="y" value="22" />
-    <option name="width" value="560" />
+    <option name="width" value="672" />
     <option name="height" value="815" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -185,7 +185,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="878" y="22" width="560" height="815" extended-state="1" />
+    <frame x="766" y="22" width="672" height="815" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -296,7 +296,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="21" selection-start="3764" selection-end="3764" vertical-scroll-proportion="0.34250763" vertical-offset="1056" max-vertical-offset="3088">
+        <state line="77" column="0" selection-start="3665" selection-end="3665" vertical-scroll-proportion="0.9785933" vertical-offset="592" max-vertical-offset="3088">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <marker date="1387049040000" expanded="true" signature="4772:4797" placeholder="..." />
