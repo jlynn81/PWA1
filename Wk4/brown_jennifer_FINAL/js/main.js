@@ -34,7 +34,6 @@
 
 
 
-
     console.log(student1, student2);
 
     console.log('*********** Original Student List ************');
@@ -59,11 +58,11 @@
             date: new Date().toDateString()
         });
 
-        console.log(student3);
         people.push(student1, student2, student3);
         console.log(people);
-    }
 
+
+    }
 
 
     addData();
@@ -76,9 +75,9 @@
         document.getElementById('address').innerHTML = 'Address: ' + people[0]['street'] + ' ' + people[0]['city'] + ' ' + people[0]['state'];
         document.getElementById('gpa').innerHTML = 'GPA: ' + people[0]['GPA'];
         document.getElementById('date').innerHTML = 'Date: ' + people[0]['date'];
-        document.getElementById('gpaavg').innerHTML = 'Average GPA: ' + people[0][average()];
+        document.getElementById('gpaavg').innerHTML = 'Average GPA: ' + people[0]['gpa'];
 
-        average();
+
 
         //code that will advance the students by one upon click
         if(people.length === 0){

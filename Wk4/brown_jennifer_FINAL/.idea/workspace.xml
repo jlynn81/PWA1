@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34c4a3b5-f3c2-42dd-b82a-219241d7bb12" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Wk3/goal7_Object_Constructor_Prototype/js/main.js" afterPath="$PROJECT_DIR$/../../Wk3/goal7_Object_Constructor_Prototype/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/studentObject.js" afterPath="$PROJECT_DIR$/js/studentObject.js" />
     </list>
     <ignored path="goal6_assign_midterm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +28,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="5" selection-start="2835" selection-end="2835" vertical-scroll-proportion="2.0795107" vertical-offset="64" max-vertical-offset="1888">
+            <state line="62" column="0" selection-start="1819" selection-end="1819" vertical-scroll-proportion="0.07339449" vertical-offset="864" max-vertical-offset="1872">
               <folding />
             </state>
           </provider>
@@ -73,8 +71,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/studentObject.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -351,7 +349,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="5" selection-start="2835" selection-end="2835" vertical-scroll-proportion="2.0795107" vertical-offset="64" max-vertical-offset="1888">
+        <state line="62" column="0" selection-start="1819" selection-end="1819" vertical-scroll-proportion="0.07339449" vertical-offset="864" max-vertical-offset="1872">
           <folding />
         </state>
       </provider>
