@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34c4a3b5-f3c2-42dd-b82a-219241d7bb12" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/studentObject.js" afterPath="$PROJECT_DIR$/js/studentObject.js" />
     </list>
     <ignored path="goal6_assign_midterm.iws" />
@@ -38,7 +37,7 @@
       <file leaf-file-name="studentObject.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/studentObject.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="1" selection-start="833" selection-end="833" vertical-scroll-proportion="0.5202399" vertical-offset="245" max-vertical-offset="912">
+            <state line="45" column="0" selection-start="792" selection-end="792" vertical-scroll-proportion="0.59970015" vertical-offset="240" max-vertical-offset="944">
               <folding />
             </state>
           </provider>
@@ -350,7 +349,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/studentObject.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="1" selection-start="833" selection-end="833" vertical-scroll-proportion="0.5202399" vertical-offset="245" max-vertical-offset="912">
+        <state line="45" column="0" selection-start="792" selection-end="792" vertical-scroll-proportion="0.59970015" vertical-offset="240" max-vertical-offset="944">
           <folding />
         </state>
       </provider>
