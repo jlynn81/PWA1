@@ -63,11 +63,7 @@
 
 
     }
-
-
     addData();
-
-
 
     function displayData(){
 
@@ -93,24 +89,14 @@
 
     }
 
-
-
-
-
-
     //Upon click Display next student
     function onClick(event){
         console.log('click');
 
         displayData();
 
+
     }
-
-
-
-
-
-
 
 
 
