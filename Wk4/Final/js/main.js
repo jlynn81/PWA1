@@ -33,10 +33,10 @@
 
     }
 
-    for (var key in people.students){
-        //displays all of the information for each object (array) to include the added object (array)
-        //console.log('Name: [',key,']:', people.students[key]);
-    }
+//    for (var key in people.students){
+//        //displays all of the information for each object (array) to include the added object (array)
+//        //console.log('Name: [',key,']:', people.students[key]);
+//    }
 
 
     //addData function adds the extra student onto the end of the above array
