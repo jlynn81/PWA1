@@ -15,41 +15,44 @@ var Student = function(options){
 
 };
 
+Array.prototype.average = function(){
+    var av = 0;
+    var cnt = 0;
+    var len = this.length;
+    for (var i = 0; i < len; i++) {
+        var e = +this[i];
+        if(!e && this[i] !== 0 && this[i] !== '0') e--;
+        if (this[i] == e) {av += e; cnt++;}
+    }
+    return av/cnt;
+};
+
+var ary = Student.GPA;
+var avg = Math.floor(ary.average());
+console.log(ary.average);
+
+
+
 Student.prototype = {
 
     students: [],
 
 
     getStudent: function(people){
-
-       this.students.push(people);
-
-
+        this.students.push(people);
     },
 
-    averageGPA: function (obj) {
-
-        var grade = 0;
-        var total = 0;
-
-        //loops through the GPA values for the average calculation
-
-        for (var i = 0, j = obj.students.length; i < j; i++){
-            //grade will increase by 1 when ran to go through all of the array elements
-            grade++;
-            //adds all of the GPA's per student
-            total = total + obj.students[i]['GPA'];
-        }
-        //this will give the average for each student
-        return total/grade;
 
 
-    }
+
+
 
 
 };
 
 Student.prototype.getStudent.prototype = Student.prototype;
+
+
 
 
 
