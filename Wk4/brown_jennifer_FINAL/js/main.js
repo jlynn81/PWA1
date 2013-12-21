@@ -11,27 +11,33 @@
     var nextBtn = document.getElementById("info_btn");
     nextBtn = addEventListener('click', onClick);
 
+    var people = [];
     //Student Information
 
-    var people = [];
-
-
-
-    people.push(new Student({
+    var student = new Student({
         name: 'Ice Freeze',
         address:{street: '123 Cold Ave', city: 'Frosty', state: 'North Pole'},
         GPA:[2.7, 4.0, 3.75],
         date: new Date().toDateString()
 
-    }));
+    });
 
-    people.push(new Student({
+    var student1 = new Student({
         name:'Rusty Reindeer',
         address:{street: '123 Frosty Street', city: 'Frozen', state: 'South Pole'},
         GPA:[3.4, 4.0, 3.25],
         date: new Date().toDateString()
 
-    }));
+    });
+
+    var student2 = new Student({
+        name: 'Santa Claus',
+        address: {street: '123 Big Dreams Place', city: 'Rudolph', state: 'North Pole'},
+        GPA: [4.0, 3.75, 4.0],
+        date: new Date().toDateString()
+    });
+
+    people.push(student, student1, student2);
 
 
 
@@ -41,63 +47,25 @@
 
         displayData();
 
+        event.preventDefault();
+        return false;
+
     }
+
 
     //console.log(student1, student2);
 
     console.log('*********** Original Student List ************');
 
-    console.log('Name: ' + people[0].name);
-    console.log('Address: ' + people[0].address.street + ' ' + people[0].address.city + ', ' + people[0].address.state);
-    console.log('GPA: ', people[0].GPA);
-    console.log('Date: ', people[0].date);
+    console.log('Name: ' + student.name);
+    console.log('Address: ' + student.address.street + ' ' + student.address.city + ', ' + student.address.state);
+    console.log('GPA: ', student.GPA);
+    console.log('Date: ', student.date);
 
-    console.log('Name: ', people[1].name);
-    console.log('Address: ', people[1].address.street + ' ' + people[1].address.city + ', ' + people[1].address.state);
-    console.log('GPA: ', people[1].GPA);
-    console.log('Date: ', people[1].date);
-
-
-    //addData function adds the extra student onto the end of the above array
-    function addData(){
-
-        people.push = new Student({
-            name: 'Santa Claus',
-            address: {street: '123 Big Dreams Place', city: 'Rudolph', state: 'North Pole'},
-            GPA: [4.0, 3.75, 4.0],
-            date: new Date().toDateString()
-        });
-
-    }
-
-    addData();
-
-    function displayData(){
-        var val = people.shift();
-        people.push(val);
-
-
-        document.getElementById('name').innerHTML = 'Name: ' + people.students[0]['name'];
-        document.getElementById('address').innerHTML = 'Address: ' + people[0]['street'] + ' ' + people[0]['city'] + ' ' + people[0]['state'];
-        document.getElementById('gpa').innerHTML = 'GPA: ' + people[0]['GPA'];
-        document.getElementById('date').innerHTML = 'Date: ' + people[0]['date'];
-        document.getElementById('gpaavg').innerHTML = 'Average GPA: ' + people[0]['gpa'];
-
-
-
-        //code that will advance the students by one upon click
-        if(people.students.length === 0){
-            //advances the student by one upon clicking the nextBtn
-            people.students++;
-
-            //if you have come to the last student, nextBtn is disabled and reflects 'DONE!!!' inside the button
-        }else if(people.students.length < 1){
-
-            document.getElementById("info_btn").innerHTML = 'Done!!!';
-        }
-
-
-    }
+    console.log('Name: ', student1.name);
+    console.log('Address: ', student1.address.street + ' ' + student1.address.city + ', ' + student1.address.state);
+    console.log('GPA: ', student1.GPA);
+    console.log('Date: ', student1.date);
 
     Array.prototype.average = function(){
         var av = 0;
@@ -112,9 +80,41 @@
 
     };
 
-    var ary = people[0].GPA;
+    var ary = people[0].GPA || people[1].GPA || people[2].GPA;
     var avg = ary.average();
-    console.log(avg);
+
+    //console.log(avg);
+
+    displayData();
+
+
+    function displayData(){
+        var val = people.shift();
+        people.push(val);
+        //console.log(val);
+
+
+        document.getElementById('name').innerHTML = 'Name: ' + people[0].name;
+        document.getElementById('address').innerHTML = 'Address: ' + people[0].address['street'] + ' ' + people[0].address['city'] + ' ' + people[0].address['state'];
+        document.getElementById('gpa').innerHTML = 'GPA: ' + people[0]['GPA'];
+        document.getElementById('date').innerHTML = 'Date: ' + people[0].date;
+        document.getElementById('gpaavg').innerHTML = 'Average GPA: ' + Math.floor(avg);
+
+        //code that will advance the students by one upon click
+        if(people.length === 0){
+            //advances the student by one upon clicking the nextBtn
+            people++;
+
+            //if you have come to the last student, nextBtn is disabled and reflects 'DONE!!!' inside the button
+        }else if(people.length == 0){
+
+            document.getElementById("info_btn").innerHTML = 'Done!!!';
+            nextBtn = removeEventListener('click', onClick);
+        }
+
+
+    }
+
 
     console.log('*********** Additional Student List ************');
 
@@ -122,19 +122,19 @@
     console.log('Name: ', people[0].name);
     console.log('Address: ', people[0].address.street + ' ' + people[0].address.city + ', ' + people[0].address.state);
     console.log('GPA: ', people[0].GPA);
-    console.log('Date: ', date);
+    console.log('Date: ', people[0].date);
 
     //student 2 information
     console.log('Name: ', people[1].name);
     console.log('Address: ', people[1].address.street + ' ' + people[1].address.city + ', ' + people[1].address.state);
     console.log('GPA: ', people[1].GPA);
-    console.log('Date: ', date);
+    console.log('Date: ', people[1].date);
 
     //Added Students information
     console.log('Name: ', people[2].name);
     console.log('Address: ', people[2].address.street + ' ' + people[2].address.city + ', ' + people[2].address.state);
     console.log('GPA: ', people[2].GPA);
-    console.log('Date: ', date);
+    console.log('Date: ',people[2].date);
 
 
 

@@ -12,6 +12,7 @@ var Student = function(options){
     this.address = options.address;
     this.GPA = options.GPA;
     this.date = options.date;
+    this.average = options.average;
 
 };
 
